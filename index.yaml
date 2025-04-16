@@ -3,7 +3,7 @@ entries:
   kobo:
   - apiVersion: v2
     appVersion: 2.025.02b
-    created: "2025-04-16T14:05:39.2464155+07:00"
+    created: "2025-04-16T14:16:29.0770221+07:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -18,7 +18,7 @@ entries:
       repository: https://charts.bitnami.com/bitnami
       version: ^15.5.17
     description: A Helm chart for KoboToolbox
-    digest: 735ca0024e2335f2be76b16464e6a59f012ad926cc1bbf60302a77ea46b9826a
+    digest: 6c569df702f1e14c6b929b3ac8f8efb3119a5f50779c624ccc5da982309e68f4
     name: kobo
     type: application
     urls:
@@ -26,7 +26,7 @@ entries:
     version: 4.1.20
   - apiVersion: v2
     appVersion: 2.025.02b
-    created: "2025-04-16T14:05:39.2251118+07:00"
+    created: "2025-04-16T14:16:29.0604772+07:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -49,7 +49,7 @@ entries:
     version: 4.1.19
   - apiVersion: v2
     appVersion: 2.025.02b
-    created: "2025-04-16T14:05:39.2077702+07:00"
+    created: "2025-04-16T14:16:29.0421249+07:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -87,7 +87,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.14
-    created: "2025-04-16T14:05:39.1866356+07:00"
+    created: "2025-04-16T14:16:29.019172+07:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -129,7 +129,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 16.4.0
-    created: "2025-04-16T14:05:39.1900336+07:00"
+    created: "2025-04-16T14:16:29.0226544+07:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -175,7 +175,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.5
-    created: "2025-04-16T14:05:39.1944604+07:00"
+    created: "2025-04-16T14:16:29.0284993+07:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -201,4 +201,4 @@ entries:
     urls:
     - https://muhammad-levi.github.io/kobo-helm-chart/charts/redis-19.6.4.tgz
     version: 19.6.4
-generated: "2025-04-16T14:05:39.1816884+07:00"
+generated: "2025-04-16T14:16:29.0136244+07:00"

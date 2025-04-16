@@ -19,9 +19,8 @@ spec:
       labels:
         app.kubernetes.io/component: kpi-job
         {{- include "kobo.selectorLabels" . | nindent 8 }}
-      annotations:
-        tag: "{{ .Values.kpi.image.tag }}"
         {{- if .Values.kpi.podAnnotations }}
+      annotations:
         {{- include "common.tplvalues.render" ( dict "value" .Values.kpi.podAnnotations "context" $ ) | nindent 8 }}
         {{- end }}
     spec:
