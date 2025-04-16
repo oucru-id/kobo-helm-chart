@@ -22,7 +22,7 @@ entries:
     name: kobo
     type: application
     urls:
-    - https://muhammad-levi.github.io/kobo-helm-chart/kobo-4.1.18.tgz
+    - https://muhammad-levi.github.io/kobo-helm-chart/packages/kobo-4.1.18.tgz
     version: 4.1.18
   mongodb:
   - annotations:
