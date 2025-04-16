@@ -1,0 +1,158 @@
+apiVersion: v1
+entries:
+  kobo:
+  - apiVersion: v2
+    appVersion: 2.025.02b
+    created: "2025-04-16T13:28:01.1538785+07:00"
+    dependencies:
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: ^15.6.14
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ^19.6.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ^15.5.17
+    description: A Helm chart for KoboToolbox
+    digest: 350fa97569351afc6418d11667b7bf6d71aa09cccaaf68878e0cedfed8f3d8d0
+    name: kobo
+    type: application
+    urls:
+    - https://muhammad-levi.github.io/kobo-helm-chart/kobo-4.1.18.tgz
+    version: 4.1.18
+  mongodb:
+  - annotations:
+      category: Database
+      images: |
+        - name: kubectl
+          image: docker.io/bitnami/kubectl:1.31.1-debian-12-r2
+        - name: mongodb
+          image: docker.io/bitnami/mongodb:7.0.14-debian-12-r3
+        - name: mongodb-exporter
+          image: docker.io/bitnami/mongodb-exporter:0.41.0-debian-12-r0
+        - name: nginx
+          image: docker.io/bitnami/nginx:1.27.1-debian-12-r5
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r30
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.0.14
+    created: "2025-04-16T13:28:01.1581178+07:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
+      it stores data in JSON-like documents. Automated scalability and high-performance.
+      Ideal for developing cloud native applications.
+    digest: 26904ab445f9d31ca5d572b280ed091d2d4bd8d5eb33984ea2ba3764e3520375
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mongodb
+    urls:
+    - https://muhammad-levi.github.io/kobo-helm-chart/charts/mongodb-15.6.26.tgz
+    version: 15.6.26
+  postgresql:
+  - annotations:
+      category: Database
+      images: |
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r30
+        - name: postgres-exporter
+          image: docker.io/bitnami/postgres-exporter:0.15.0-debian-12-r43
+        - name: postgresql
+          image: docker.io/bitnami/postgresql:16.4.0-debian-12-r14
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 16.4.0
+    created: "2025-04-16T13:28:01.1633531+07:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: PostgreSQL (Postgres) is an open source object-relational database
+      known for reliability and data integrity. ACID-compliant, it supports foreign
+      keys, joins, views, triggers and stored procedures.
+    digest: 6537de714df16f71c720921bd0ad8fad90bb01525fb3aacff3503781de3f9f8b
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/postgresql
+    urls:
+    - https://muhammad-levi.github.io/kobo-helm-chart/charts/postgresql-15.5.38.tgz
+    version: 15.5.38
+  redis:
+  - annotations:
+      category: Database
+      images: |
+        - name: kubectl
+          image: docker.io/bitnami/kubectl:1.30.3-debian-12-r4
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r27
+        - name: redis
+          image: docker.io/bitnami/redis:7.2.5-debian-12-r4
+        - name: redis-exporter
+          image: docker.io/bitnami/redis-exporter:1.62.0-debian-12-r2
+        - name: redis-sentinel
+          image: docker.io/bitnami/redis-sentinel:7.2.5-debian-12-r4
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.2.5
+    created: "2025-04-16T13:28:01.166878+07:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Redis(R) is an open source, advanced key-value store. It is often
+      referred to as a data structure server since keys can contain strings, hashes,
+      lists, sets and sorted sets.
+    digest: 488b39d7dbf107c3749aedb11fd76a8be04762de91920d1b607590ffdd99bd9d
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: redis
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/redis
+    urls:
+    - https://muhammad-levi.github.io/kobo-helm-chart/charts/redis-19.6.4.tgz
+    version: 19.6.4
+generated: "2025-04-16T13:28:01.1396681+07:00"
