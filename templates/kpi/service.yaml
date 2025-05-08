@@ -4,6 +4,10 @@ metadata:
   name: {{ include "kobo.fullname" . }}-kpi
   labels:
     {{- include "kobo.labels" . | nindent 4 }}
+  {{- if .Values.kpi.serviceAnnotations }}
+  annotations:
+  {{- include "common.tplvalues.render" ( dict "value" .Values.kpi.serviceAnnotations "context" $ ) | nindent 4 }}
+  {{- end }}
 spec:
   type: {{ .Values.kpi.service.type }}
   ports:
