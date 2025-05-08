@@ -100,6 +100,8 @@ kpi:
       # AWS_SECRET_ACCESS_KEY: ""
   extraVolumeMounts: []
   extraVolumes: []
+  livenessProbe:
+    timeoutSeconds: 300
   worker:
     replicaCount: 1
     livenessProbe:
