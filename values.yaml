@@ -101,7 +101,9 @@ kpi:
   extraVolumeMounts: []
   extraVolumes: []
   livenessProbe:
-    timeoutSeconds: 300
+    timeoutSeconds: 5
+  readinessProbe:
+    timeoutSeconds: 1
   worker:
     replicaCount: 1
     livenessProbe:

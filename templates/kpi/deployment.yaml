@@ -54,6 +54,7 @@ spec:
               path: /service_health/minimal/
               port: http
             initialDelaySeconds: 5
+            timeoutSeconds: {{.Values.kpi.readinessProbe.timeoutSeconds | default 1 }}
           resources:
             {{- toYaml .Values.kpi.resources | nindent 12 }}
           env:

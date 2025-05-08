@@ -3,7 +3,30 @@ entries:
   kobo:
   - apiVersion: v2
     appVersion: 2.025.02h
-    created: "2025-05-08T14:39:54.3584904+07:00"
+    created: "2025-05-08T15:07:02.1565904+07:00"
+    dependencies:
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: ^15.6.14
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ^19.6.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ^15.5.17
+    description: A Helm chart for KoboToolbox
+    digest: 6c0d8b4bd3c2c0e8c7f3cfac0e20f9a1d6838121960225cc6c0f133de9d99b88
+    name: kobo
+    type: application
+    urls:
+    - https://muhammad-levi.github.io/kobo-helm-chart/packages/kobo-4.1.25.tgz
+    version: 4.1.25
+  - apiVersion: v2
+    appVersion: 2.025.02h
+    created: "2025-05-08T15:07:02.1380686+07:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -26,7 +49,7 @@ entries:
     version: 4.1.24
   - apiVersion: v2
     appVersion: 2.025.02h
-    created: "2025-05-08T14:39:54.3452739+07:00"
+    created: "2025-05-08T15:07:02.1234592+07:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -49,7 +72,7 @@ entries:
     version: 4.1.23
   - apiVersion: v2
     appVersion: 2.025.02b
-    created: "2025-05-08T14:39:54.3315611+07:00"
+    created: "2025-05-08T15:07:02.1103932+07:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -72,7 +95,7 @@ entries:
     version: 4.1.20
   - apiVersion: v2
     appVersion: 2.025.02b
-    created: "2025-05-08T14:39:54.3178962+07:00"
+    created: "2025-05-08T15:07:02.0963722+07:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -95,7 +118,7 @@ entries:
     version: 4.1.19
   - apiVersion: v2
     appVersion: 2.025.02b
-    created: "2025-05-08T14:39:54.298283+07:00"
+    created: "2025-05-08T15:07:02.0758624+07:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -133,7 +156,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.14
-    created: "2025-05-08T14:39:54.2761333+07:00"
+    created: "2025-05-08T15:07:02.0541804+07:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -175,7 +198,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 16.4.0
-    created: "2025-05-08T14:39:54.2802437+07:00"
+    created: "2025-05-08T15:07:02.0576251+07:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -221,7 +244,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.5
-    created: "2025-05-08T14:39:54.2840626+07:00"
+    created: "2025-05-08T15:07:02.0623183+07:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -247,4 +270,4 @@ entries:
     urls:
     - https://muhammad-levi.github.io/kobo-helm-chart/charts/redis-19.6.4.tgz
     version: 19.6.4
-generated: "2025-05-08T14:39:54.2710216+07:00"
+generated: "2025-05-08T15:07:02.0487311+07:00"
